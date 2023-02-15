@@ -1,18 +1,20 @@
 import React from 'react'
 import CartWidget from '../CartWidget/CartWidget'
-import Navbar from '../Navbar/Navbar'
+import NavbarContainer from '../NavbarContainer/NavbarContainer'
 import BrandIcon from '../BrandIcon/BrandIcon'
+import SearchBar from '../SearchBar/SearchBar'
 
 const header = ()=> {
   return (
     <div style={{display: "flex",
-                 width: "100%",
+                 width: "99%",
                  height: "14vh",
-                 justifyContent: "space-between",
+                 justifyContent: "space-evenly",
                  alignItems: "center"
                  }}>
         <BrandIcon />
-        <Navbar />
+        <SearchBar />
+        <NavbarContainer />
         <CartWidget />
     </div>
   )

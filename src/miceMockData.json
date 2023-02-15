@@ -1,0 +1,77 @@
+[
+    {
+      "id": 1,
+      "name": "Logitech G Pro Wireless",
+      "brand": "Logitech",
+      "gripType": "palm",
+      "shape": "ambidextrous",
+      "weight": "80g",
+      "size": "small",
+      "wireless": true,
+      "price": "$129.99",
+      "imgURL": "https://res.cloudinary.com/dquh1qcti/image/upload/v1675894912/design-large_erqnp3.jpg",
+      "category": "mouse",
+      "specs": {
+        "Sensor": "Hero 16K",
+        "DPI": "16000",
+        "Polling Rate": "1000Hz",
+        "Buttons": "6"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Razer Viper Ultimate v2",
+      "brand": "Razer",
+      "gripType": "claw",
+      "shape": "ergonomic",
+      "weight": "74g",
+      "size": "small",
+      "wireless": true,
+      "price": "$149.99",
+      "imgURL": "https://res.cloudinary.com/dquh1qcti/image/upload/v1675894970/design-large_1_bafm2j.jpg",
+      "category": "mouse",
+      "specs": {
+        "Sensor": "Focus + 20K",
+        "DPI": "20000",
+        "Polling Rate": "1000Hz",
+        "Buttons": "8"
+      }
+    },{
+      "id": 3,
+      "name": "Razer Deathadder v2",
+      "brand": "Razer",
+      "gripType": "palm",
+      "shape": "ergonomic",
+      "weight": "74g",
+      "size": "small",
+      "wireless": false,
+      "price": "$149.99",
+      "imgURL": "https://res.cloudinary.com/dquh1qcti/image/upload/v1675894971/design-large_2_nrwn9o.jpg",
+      "category": "mouse",
+      "specs": {
+        "Sensor": "Focus + 20K",
+        "DPI": "20000",
+        "Polling Rate": "1000Hz",
+        "Buttons": "8"
+      }
+    },{
+      "id": 4,
+      "name": "Artisan Hien",
+      "brand": "Artisan",
+      "gripType": "",
+      "shape": "",
+      "weight": "200g",
+      "size": "",
+      "wireless": false,
+      "price": "$149.99",
+      "imgURL": "https://res.cloudinary.com/dquh1qcti/image/upload/v1676420827/maxresdefault_tyjang.jpg",
+      "category": "mousepad",
+      "specs": {
+        "Sensor": "",
+        "DPI": "",
+        "Polling Rate": "",
+        "Buttons": ""
+      }
+    }
+  ]
+  
