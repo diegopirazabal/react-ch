@@ -1,15 +1,15 @@
 import * as React from 'react';
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import "../Navbar/Navbar.css"
 
 export default function GroupSizesColors({categorias}) {
 
   const buttons = [
-    <Link to="/category/mouse" style={{ textDecoration: 'none' }}><Button>{categorias[0]}</Button></Link>,
-    <Link to="/category/mousepad" style={{ textDecoration: 'none' }}><Button>{categorias[1]}</Button></Link>,
-    <Link to="/category/accessories" style={{ textDecoration: 'none' }}><Button>{categorias[2]}</Button></Link>,
+    <NavLink to="/category/mouse" style={{ textDecoration: 'none' }} className={({isActive})=>isActive ? "active-navbar" : "navbar-item"}><Button>{categorias[0]}</Button></NavLink>,
+    <NavLink to="/category/mousepad" style={{ textDecoration: 'none' }} className={({isActive})=>isActive ? "active-navbar" : "navbar-item"}><Button>{categorias[1]}</Button></NavLink>,
+    <NavLink to="/category/accessories" style={{ textDecoration: 'none' }} className={({isActive})=>isActive ? "active-navbar" : "navbar-item"}><Button>{categorias[2]}</Button></NavLink>,
   ];
 
   return (

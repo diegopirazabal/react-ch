@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import products from "../../miceMockData";
+import {db} from '../../firebaseConfig'
+import { getDoc, collection, doc } from 'firebase/firestore'
 import ItemDetail from "../ItemDetail/ItemDetail";
 
 const ItemDetailContainer = () => {
@@ -9,10 +10,14 @@ const ItemDetailContainer = () => {
   const [product, setProduct] = useState({});
 
   useEffect(() => {
-    let productSelected = products.find((prod) => prod.id === +id);
+   
+    const itemCollection = collection(db, "products")
+    const ref = doc(itemCollection, id)
+    getDoc(ref)
+      .then((res)=>setProduct( {...res.data(),id: res.id} ))
+      .catch()
 
-    setProduct(productSelected);
-  }, []);
+  }, [ id ]);
 
   return (
     <div style={{display: "flex",

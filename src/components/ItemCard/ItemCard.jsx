@@ -23,12 +23,12 @@ const ItemCard = ( props ) => {
               {product.name}
             </Typography>
             <Typography gutterBottom variant="h6" component="div">
-              {product.price}
+              ${product.price}
             </Typography>
           </CardContent>
           <CardActions>
             <Link to ={`/itemdetail/${product.id}`} style={{ textDecoration: 'none' }}>
-            <Button size="small" variant='contained' >Comprar</Button>
+            <Button size="small" variant='contained' >Ver Mas</Button>
             </Link>
           </CardActions>
         </Card>

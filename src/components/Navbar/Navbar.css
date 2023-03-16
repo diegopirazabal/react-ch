@@ -1,4 +1,19 @@
 .boton {
     color: black;
     text-decoration-color: black;
+    font-weight: bold;
+}
+
+.active-navbar {
+    color: black;
+    text-decoration-color: black;
+    font-weight: bold;
+    opacity: 20%;
+    font-size:xx-large;
+}
+
+.navbar-item {
+    color: black;
+    text-decoration-color: black;
+    font-weight: bold;
 }
