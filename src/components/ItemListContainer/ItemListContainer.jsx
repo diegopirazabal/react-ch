@@ -15,6 +15,7 @@ const ItemListContainer = ()=> {
 const [items, setItems] = useState([])
 const {name} = useParams()
 
+
   useEffect( ()=>{
 
   //   const itemsFiltered = miceMockData.filter( (product)=> product.category === name)
@@ -43,17 +44,15 @@ const {name} = useParams()
     const itemCollection = collection( db , "products" )
 
     if(name){
-
       const q = query(itemCollection, where("category", "==", name))
-
       getDocs(q)
       .then((res)=>{
-
+        
         const products = res.docs.map(product => {
           return {...product.data(), id: product.id}
         })
         setItems(products)
-
+        
       })
       .catch((err)=>{console.log("respuesta(error): " + err)})
     }else{
